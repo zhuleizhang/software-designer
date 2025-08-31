@@ -13,5 +13,11 @@
 			"path": "/Library/Java/JavaVirtualMachines/temurin-21.jdk",
 			"default": true
 		}
-	]
+	],
+	"[markdown]": {
+		"editor.formatOnSave": false,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": false // 同时禁用保存时的其他自动修复
+		}
+	}
 }
