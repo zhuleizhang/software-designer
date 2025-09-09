@@ -2,6 +2,7 @@ package DesignPattern;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
 
 public class Builder {
     public static void main(String[] args) {
@@ -34,8 +35,14 @@ class BuilderProduct {
     }
 
     public void show() {
-        for (String part : parts) {
-            System.out.print(part + " ");
+        // for (String part : parts) {
+        // System.out.print(part + " ");
+        // }
+        // System.out.println();
+
+        Iterator<String> iterator = parts.iterator();
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
         }
         System.out.println();
     }
